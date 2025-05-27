@@ -1,5 +1,23 @@
-__pycache__
+# VS Code
+.vscode
 
-/audios/
-/data/
-/legacy/
+# MacOS
+.DS_Store
+
+# Byte-compiled files
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+venv/
+
+# mypy
+.mypy_cache/
+
+# Others
+/audios
+/legacy
+/data/wikipedia-zh-yue
