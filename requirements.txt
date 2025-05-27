@@ -1,0 +1,15 @@
+beautifulsoup4==4.13.4
+canto_filter==1.1.1
+datasets==3.2.0
+openai==1.82.0
+opencc_python_reimplemented==0.1.7
+pandas==2.2.3
+pycantonese==3.4.0
+pydantic==2.11.5
+python-dotenv==1.1.0
+scikit_learn==1.6.1
+torch==2.6.0
+tqdm==4.67.1
+transformers==4.51.3
+vllm==0.8.4
+wandb==0.19.11
