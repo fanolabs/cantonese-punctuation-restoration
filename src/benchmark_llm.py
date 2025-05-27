@@ -70,11 +70,7 @@ def main():
     parser.add_argument("--model", type=str, default="gpt-4o-mini")
     parser.add_argument("--temperature", type=float, default=0.3)
     parser.add_argument("--input_filepath", type=str, default="data/hkcancor.csv")
-    # parser.add_argument("--output_filepath", type=str, default=None)
     args = parser.parse_args()
-    # if args.output_filepath is None:
-    #     os.makedirs("outputs", exist_ok=True)
-    #     args.output_filepath = f"outputs/{args.model}_hkcancor_pred.csv"
 
     df = pd.read_csv(args.input_filepath).iloc[:10]
     true_punctuated_texts = df["text"].tolist()
@@ -85,8 +81,8 @@ def main():
     if args.model.startswith("gpt"):
         client = AzureOpenAI(
             api_version="2024-08-01-preview",
-            api_key="49eb7947f74741fd9f7d4c266bed825d",
-            azure_endpoint="https://fano-openai-east-us.openai.azure.com",
+            api_key="API_KEY",
+            azure_endpoint="AZURE_ENDPOINT",
         )
         for prompt in tqdm(prompts):
             messages = [{"role": "user", "content": prompt}]

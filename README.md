@@ -78,4 +78,3 @@ CUDA_VISIBLE_DEVICES=0 python src/train.py \
 The model is simply a transformer encoder with a token classification head.
 
 ![](./assets/model_architecture.png)
-
